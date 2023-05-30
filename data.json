@@ -1,0 +1,94 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Snoopy",
+      "breed": "beagle",
+      "owner": "Charlie Brown",
+      "age": 4,
+      "likes": 0,
+      "image": "https://m.media-amazon.com/images/I/51EXsjaMWXL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Wishbone",
+      "breed": "terrier",
+      "owner": "Joe Talbot",
+      "age": 12,
+      "likes": 0,
+      "image": "https://bookriot.com/wp-content/uploads/2021/10/Wishbone-1280x720.jpeg"
+    },
+    {
+      "name": "Spot",
+      "breed": "beagle",
+      "owner": "Valencia",
+      "age": "4",
+      "likes": 0,
+      "image": "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+      "id": 3
+    },
+    {
+      "name": "Peaches",
+      "breed": "German Shepard",
+      "owner": "Liz",
+      "age": "9",
+      "likes": 0,
+      "image": "https://d.newsweek.com/en/full/2201052/dog.jpg?w=1600&h=1200&q=88&f=56687919043018e29fc48209d009e5ca",
+      "id": 4
+    },
+    {
+      "name": "Pat",
+      "breed": "German Shepard",
+      "owner": "Liz",
+      "age": "9",
+      "likes": 0,
+      "image": "https://www.purina.co.uk/sites/default/files/2022-07/German-Shepherd-Dog.jpg?itok=eQlRJxqe",
+      "id": 5
+    },
+    {
+      "name": "blueberry",
+      "breed": "beagle",
+      "owner": "Liz",
+      "age": "9",
+      "likes": 0,
+      "image": "https://www.thesprucepets.com/thmb/76Jd0a4_CBxXNyBah2gbK099xGo=/4367x0/filters:no_upscale():strip_icc()/beagle-RolfKopfle-Photolibrary-Getty-135631212-56a26b1d3df78cf772756667.jpg",
+      "id": 6
+    },
+    {
+      "name": "Maria",
+      "breed": "beagle",
+      "owner": "Valencia",
+      "age": "4",
+      "likes": 0,
+      "image": "https://dogtime.com/wp-content/uploads/sites/12/2011/01/file_23012_beagle.jpg?w=460",
+      "id": 7
+    },
+    {
+      "name": "Brandy",
+      "breed": "terrier",
+      "owner": "Vicky",
+      "age": "5",
+      "likes": 0,
+      "image": "https://cdn.britannica.com/77/235277-050-E9162647/white-bull-terrier-dog.jpg",
+      "id": 8
+    },
+    {
+      "name": "Peaches",
+      "breed": "German Shepard",
+      "owner": "Liz",
+      "age": "6",
+      "likes": 0,
+      "image": "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTo7Ip1_kUvkTHPE7QSLlCr_-hYsl8ts_HQ997mQ14iiD3mbds6IZCz_kC_f2VAxM4bsgvbaegk70M3hXQ",
+      "id": 9
+    },
+    {
+      "name": "strawberry",
+      "breed": "German Shepard",
+      "owner": "Valery",
+      "age": "9",
+      "likes": 0,
+      "image": "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:1rem;
+    padding:0;
+    margin:0;
+    background-image: url('https://img.freepik.com/premium-vector/seamless-pattern-cute-dog-puppy-symbol-toy-paw-footstep-cartoon-funny-happy-dog-concept-with-simple-shape-style-illustration-background-wallpaper-textile-fabric_253081-200.jpg?w=2000');
+}
+
+h1,h2,h2,legend{
+    text-align: center;
+}
+
+div#dogs{
+    display: flex;
+    flex-wrap: wrap;
+    margin:2rem auto;
+}
+
+div.dog{
+    width:300px;
+    margin:2rem auto;
+    border:solid 1px black;
+    border-radius:10px;
+    box-shadow:#000 5px 5px 5px;
+    text-align: center;
+    background: radial-gradient(white 50%,bisque);
+}
+
+div.dog img{
+    width:75%;
+    height:250px;
+    border-radius: 5px;
+    display: block;
+    margin:1rem auto;
+}
+
+form{
+    margin:1rem;
+}
+
+form div{
+    width:100%;
+    margin:1rem auto;
+}
+
+form div.form-content{
+    background: radial-gradient(white 50%,bisque);
+    border:solid 1px black;
+    border-radius:10px;
+    padding:1rem;
+    width:50%;
+    margin:1rem auto;
+}
+
+input{
+    border-radius: 5px;
+    padding:.5rem;
+    position:sticky;
+    left:45%;
+}
+
+input[type="text"]{
+    width:50%;
+}
+
+button,input[type="submit"]{
+    background-color:chartreuse;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+input,button,input[type="submit"]{
+    font-family: 'Raleway', sans-serif;
+}
+
+legend{
+    font-size:2rem;
+    font-weight:900;
+    width:100%;
+    margin:1rem auto;
+}
+
+label{
+    font-weight: 900;
+    margin:2rem;
+}
+
+button.deleteBtn{
+    background-color: red;
+    margin:1rem;
+    border:solid 1px black;
+    border-radius: 5px;
+}
+
+span.numOfLikesSpan{
+    margin:1rem;
+}
+
+img.likesImg{
+    width:25px !important;
+    height:25px !important;
+    border:solid 1px black;
+}
+
+button.deleteBtn,img.likesImg{
+    cursor:pointer;
+}
+
+header{
+    background-color: bisque;
+    padding:1rem;
+    margin:1rem 0px;
+    border: solid 1px black;
+}
+
+@media screen and (max-width: 600px) {
+    div.dog{
+        width:75%;
+    }
+    input[type="text"]{
+        width:100%;
+    }
+} 
