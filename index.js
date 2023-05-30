@@ -14,6 +14,7 @@ function createDog(dog){
     const deleteBtn=document.createElement("button")
     deleteBtn.textContent="X"
     deleteBtn.classList.add("deleteBtn")
+    deleteBtn.addEventListener("click",event=>deleteDog(event,dog))
     //add dog name
     const name=document.createElement("p")
     name.textContent=`Name:  ${dog.name}`
@@ -37,6 +38,7 @@ function createDog(dog){
     const likesImg=document.createElement("img")
     likesImg.classList.add("likesImg")
     likesImg.src="heart.png"
+    likesImg.addEventListener("click",event=>updateLikes(event,dog))
     //create div element and add created elements with data to it
     const dogDiv=document.createElement("div")
     dogDiv.classList.add("dog")
@@ -86,4 +88,37 @@ function addNewDog(event){
     .then(newDog=>createDog(newDog))
     .catch(e=>alert(e.message))
 
+}
+
+function updateLikes(event,dog){
+    const numOfLikesSpan=event.target.parentNode.querySelector("span.numOfLikesSpan")
+    let likes=parseInt(numOfLikesSpan.textContent)
+    likes=likes+1
+    const updatedLikes={likes}
+    fetch(`${URL}/${dog.id}`,{
+        method:"PATCH",
+        headers:{
+            "Content-Type":"application/json",
+            "Accept":"application/json"
+        },
+        body:JSON.stringify(updatedLikes)
+    })
+    .then(response=>response.json())
+    .then(updatedDog=>numOfLikesSpan.textContent=`${updatedDog.likes} likes`)
+    .catch(error=>alert(error.message))
+}
+
+function deleteDog(event,dog){
+    fetch(`${URL}/${dog.id}`,{
+        method:"DELETE"
+    })
+    .then(response=>{
+        if(response.ok){
+            event.target.parentNode.remove()
+        }
+        else{
+            alert("Deletion failed")
+        }
+    })
+    .catch(error=>alert(error.message))
 }
